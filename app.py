@@ -15,12 +15,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ## Load the Groq API key
-groq_api_key = os.environ['GROQ_API_KEY'] # reads the system environment variable into a Python variable. 
-                                          # If you only need to pass the API key to a function
+groq_api_key = os.environ['GROQ_API_KEY']  
 
 
-## st.session_state is like a box where you can store variables that will remember their values while you use the app.
-## Normally, when you refresh a Streamlit app, all variables reset.
 if "vectors" not in st.session_state:
     urls = [
         "https://huggingface.co/docs/transformers/index",
@@ -41,7 +38,7 @@ if "vectors" not in st.session_state:
     st.session_state.embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)
 
-llm = ChatGroq(groq_api_key = groq_api_key, # passing the API key to the function 
+llm = ChatGroq(groq_api_key = groq_api_key, 
                model_name = "llama-3.1-8b-instant")
 
 prompt = ChatPromptTemplate.from_template(
@@ -134,10 +131,3 @@ st.markdown(
     "</p>",
     unsafe_allow_html=True
 )
-
-## with is just a cleaner, safer way to handle objects that need automatic opening/closing. like automatic closing of files that were opened.
-## st.expander("Title") creates a collapsible box in your web app that can be expanded or collapsed by clicking it.
-## enumerate() is a Python function that loops over a collection and also gives you the index (count) of each item    
-
-## The with keyword tells Streamlit: "Whatever I write in this block should be inside the expander UI."
-## The expander hides the document chunks by default (to keep the UI clean).
