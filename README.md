@@ -58,7 +58,9 @@ GROQ_API_KEY=your_groq_api_key_here
 streamlit run app.py
 ```
 
-🧑‍💻 Author
+---
+
+## 👩‍💻 Author
 Khwaish Khandelwal
 - AI/ML Enthusiast | Computer Vision | NLP | Data Science | 
 [LinkedIn](https://www.linkedin.com/in/khwaish-khandelwal-543b9725a/) | [GitHub](https://github.com/KhwaishK)
