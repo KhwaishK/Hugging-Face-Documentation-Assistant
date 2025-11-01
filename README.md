@@ -1,44 +1,43 @@
-# My ChatGroq Project 🤖
+# 🤖 ChatGroq RAG Assistant  
 
-## What is this?
-This is my project that builds a smart chatbot using AI! It can answer questions about machine learning by reading HuggingFace documentation.
-
-## What does it do?
-- Loads a website (HuggingFace docs) automatically
-- Breaks the content into small pieces
-- When you ask a question, it finds the most relevant pieces
-- Uses AI (Groq) to give you a smart answer
-- Shows you which parts of the docs it used
-
-## Stuff I need to install:
-```bash
-pip install streamlit langchain langchain-community langchain-groq faiss-cpu python-dotenv
-```
-
-## Setup:
-1. Get a free Groq API key from groq.com
-2. Make a `.env` file and put: `GROQ_API_KEY=your_key_here`
-3. Make sure Ollama is running on your computer
-
-## How to run:
-```bash
-streamlit run app.py
-```
-Then go to http://localhost:8501
-
-## How I built this:
-1. **WebBaseLoader** - grabs content from websites
-2. **Text Splitter** - chops up long docs into chunks
-3. **Ollama Embeddings** - turns text into numbers the computer understands
-4. **FAISS** - super fast search through all the chunks
-5. **Groq** - the AI brain that writes the answers
-6. **Streamlit** - makes it look nice on the web
-
-## Cool features:
-- Only loads the docs once (saves time!)
-- Shows how long each answer takes
-- You can see exactly which parts of the docs were used
-- Clean web interface
+### 🔗 Live Demo  
+👉 [Try it on Hugging Face Spaces](https://huggingface.co/spaces/your-username/chatgroq-rag-assistant)
 
 ---
-*This project demonstrates key concepts in AI, NLP, and web development!*
+
+### 🧠 Overview  
+**ChatGroq RAG Assistant** is an AI-powered chatbot that uses **Retrieval-Augmented Generation (RAG)** to answer questions based on **Hugging Face documentation**.  
+Built using **LangChain**, **Streamlit**, and **Groq API**, it performs semantic search with **FAISS** and **Hugging Face embeddings** to deliver accurate, context-aware responses.  
+
+---
+
+### 🚀 Features  
+- 📚 Fetches and indexes Hugging Face documentation automatically  
+- 🧩 Splits text into smaller chunks for efficient retrieval  
+- 🧠 Uses **FAISS** for vector similarity search  
+- ⚡ Integrates **Groq LLM** for fast and intelligent responses  
+- 🖥️ Clean and modern **Streamlit** web interface  
+- 🔍 Displays which parts of the docs were used for each answer  
+- ⏱️ Shows response generation time  
+
+---
+
+### 🧰 Tech Stack  
+| Component | Purpose |
+|------------|----------|
+| **LangChain** | Building the RAG pipeline |
+| **Groq API** | LLM inference for response generation |
+| **FAISS** | Vector similarity search |
+| **Hugging Face Embeddings** | Text vectorization |
+| **Streamlit** | Interactive frontend |
+| **WebBaseLoader** | Loads Hugging Face documentation |
+
+---
+
+### ⚙️ Installation  
+
+**1️⃣ Clone the repository:**  
+```bash
+git clone https://github.com/your-username/chatgroq-rag-assistant.git
+cd chatgroq-rag-assistant
+
