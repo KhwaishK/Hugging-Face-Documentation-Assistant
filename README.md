@@ -1,7 +1,7 @@
 # 🤖 ChatGroq RAG Assistant  
 
 ### 🔗 Live Demo  
-👉 [Try it on Hugging Face Spaces](https://huggingface.co/spaces/your-username/chatgroq-rag-assistant)
+👉 [Try it on Hugging Face Spaces](https://huggingface.co/spaces/KhwaishK/ChatGroq_RAG_Assistant)
 
 ---
 
@@ -38,7 +38,7 @@ Built using **LangChain**, **Streamlit**, and **Groq API**, it performs semantic
 
 **1️⃣ Clone the repository:**  
 ```bash
-git clone https://github.com/your-username/chatgroq-rag-assistant.git
+git clone https://github.com/KhwaishK/ChatGroq-RAG-Assistant.git
 cd chatgroq-rag-assistant
 ```
 
