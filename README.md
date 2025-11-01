@@ -40,4 +40,25 @@ Built using **LangChain**, **Streamlit**, and **Groq API**, it performs semantic
 ```bash
 git clone https://github.com/your-username/chatgroq-rag-assistant.git
 cd chatgroq-rag-assistant
+```
 
+**2️⃣ Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+**3️⃣ Set up environment variables:**
+Create a .env file in the project root and add:
+```bash
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+**▶️ Run Locally**
+```bash
+streamlit run app.py
+```
+
+🧑‍💻 Author
+Khwaish Khandelwal
+- AI/ML Enthusiast | Computer Vision | NLP | Data Science | 
+[LinkedIn](https://www.linkedin.com/in/khwaish-khandelwal-543b9725a/) | [GitHub](https://github.com/KhwaishK)
